@@ -47,4 +47,4 @@ lm(mpg ~ factor(cyl) + hp + wt, data = mtcars)
 ---
 ## Sample Screenshot of app
 
-![sample screenshot from app](assets/img/ss.png)
+![sample screenshot from app](assets/img/ss.PNG)

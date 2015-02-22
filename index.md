@@ -15,7 +15,7 @@ knit        : slidify::knit2slides
 
 1. Formulate question
 2. Gather data
-3. **Exploring data (Time-consuming)**
+3. Exploring data (focus on this app)
 4. Develop model to answer question
 5. Document steps and analysis for publication
 
@@ -58,4 +58,4 @@ lm(mpg ~ factor(cyl) + hp + wt, data = mtcars)
 ---
 ## Sample Screenshot of app
 
-![sample screenshot from app](assets/img/ss.png)
+![sample screenshot from app](assets/img/ss.PNG)
