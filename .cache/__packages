@@ -1,0 +1,10 @@
+base
+shiny
+lattice
+ggplot2
+caret
+rpart
+e1071
+shinyapps
+devtools
+slidify

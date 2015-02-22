@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exploratory Data Analysis for Regression Model Development</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Exploratory Data Analysis for Regression Model Development">
+  <meta name="author" content="kylase-coursera">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Exploratory Data Analysis for Regression Model Development</h1>
+    <h2>Data Product Pitch</h2>
+    <p>kylase-coursera<br/>MOOC Student</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Data analysis life cycle</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Formulate question</li>
+<li>Gather data</li>
+<li><strong>Exploring data (Time-consuming)</strong></li>
+<li>Develop model to answer question</li>
+<li>Document steps and analysis for publication</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Exploring data</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>As we are in an era which the amount of data are growing exponentially, exploring data needs to be easier and less tedious. </p>
+
+<p>Exploring data needs the following skillsets:</p>
+
+<ol>
+<li>Data wrangling</li>
+<li>Data visualisation
+
+<ul>
+<li>Programming-based such as MATLAB, Matplotlib (Python), ggplot (R)</li>
+<li>HTML/CSS/JS such as <a href="http://d3js.org">D3.js</a></li>
+<li>Software like Tableau, etc</li>
+</ul></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>App</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The <a href="https://kylase-coursera.shinyapps.io/Project/">data product app that I have developed</a> is a simple data visualisation tool that helps to develop linear model in an agile fashion.</p>
+
+<p>Making use of the <code>mtcars</code> data as an example, one can easily manipulate 3 variables (x axis, colour and size of the points on scatter plot) at one to visualise the data to develop regression models.</p>
+
+<p>So you can easily develop a linear regression:</p>
+
+<pre><code class="r">lm(mpg ~ factor(cyl) + hp + wt, data = mtcars)
+</code></pre>
+
+<pre><code>## 
+## Call:
+## lm(formula = mpg ~ factor(cyl) + hp + wt, data = mtcars)
+## 
+## Coefficients:
+##  (Intercept)  factor(cyl)6  factor(cyl)8            hp            wt  
+##     35.84600      -3.35902      -3.18588      -0.02312      -3.18140
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Sample Screenshot of app</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/ss.png" alt="sample screenshot from app"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Data analysis life cycle'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Exploring data'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='App'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Sample Screenshot of app'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
